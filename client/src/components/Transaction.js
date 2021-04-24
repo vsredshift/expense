@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {GlobalContext} from '../context/GlobalState';
+import { numberWithCommas } from '../utils/format';
 
 export const Transaction = ({ transaction }) => {
     const { deleteTransaction } = useContext(GlobalContext);
@@ -7,8 +8,8 @@ export const Transaction = ({ transaction }) => {
 
     return (
         <li className={transaction.amount < 0 ? "minus" : "plus"}>
-            {transaction.text} <span>{sign}${Math.abs(transaction.amount)}</span>
-            <button className="delete-btn" onClick={() => deleteTransaction(transaction.id)}>Remove</button>
+            {transaction.text} <span>{sign}${numberWithCommas(Math.abs(transaction.amount))}</span>
+            <button className="delete-btn" onClick={() => deleteTransaction(transaction._id)}>Remove</button>
         </li> 
     )
 }
