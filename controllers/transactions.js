@@ -10,7 +10,7 @@ exports.getTransactions = async (req, res, next) => {
             success: true,
             count: transactions.length,
             data: transactions
-          })
+          });
     } catch (err) {
         return res.status(500).json({
             success: false,

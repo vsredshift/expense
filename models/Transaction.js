@@ -10,7 +10,7 @@ const TransactionSchema = new mongoose.Schema ({
         type: Number,
         required: [true, 'Add a positive or negative number']
     },
-    createdAt: {
+    createdOn: {
         type: Date,
         default: Date.now
     }
