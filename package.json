@@ -30,7 +30,7 @@
     "url": "git+https://github.com/vsredshift/expense.git"
   },
   "engines": {
-    "node": "14-15-4"
+    "node": "14.15.4"
   },
   "author": "VSRedshift",
   "license": "ISC",
