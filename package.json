@@ -2,7 +2,7 @@
   "name": "expense-tracker",
   "version": "1.0.0",
   "description": "backend for expense tracker client",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
