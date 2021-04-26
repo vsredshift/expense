@@ -9,6 +9,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.12.5",
     "morgan": "^1.10.0",
+    "netlify-cli": "^3.21.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
@@ -28,7 +29,6 @@
     "type": "git",
     "url": "git+https://github.com/vsredshift/expense.git"
   },
-  
   "author": "VSRedshift",
   "license": "ISC",
   "bugs": {
