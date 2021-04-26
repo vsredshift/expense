@@ -49,7 +49,7 @@ exports.addTransaction = async (req, res, next) => {
 };
 
 
-//  @desc       Delete all transactions
+//  @desc       Delete a transaction
 //  @route      DELETE /api/v1/transactions/:id
 //  @access     Public
 exports.deleteTransaction = async (req, res, next) => {
