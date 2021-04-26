@@ -2,7 +2,7 @@
   "name": "expense-tracker",
   "version": "1.0.0",
   "description": "backend for expense tracker client",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
@@ -24,16 +24,19 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vsredshift/expense.git"
+  },
+  "engines": {
+    "node": "14.15.4"
   },
   "author": "VSRedshift",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vsredshift/expense/issues"
   },
-  "homepage": "https://guerrilla-expense-tracker.netlify.app/"
+  "homepage": ":"
 }
